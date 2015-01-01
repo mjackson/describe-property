@@ -1,7 +1,7 @@
 {
   "name": "describe-property",
   "version": "1.0.0",
-  "description": "Define properties quickly with ES5 defaults",
+  "description": "Define JavaScript object properties quickly with ES5 defaults",
   "main": "modules/describeProperty.js",
   "scripts": {
     "test": "jshint . && mocha --reporter spec 'modules/**/__tests__/*-test.js'"
