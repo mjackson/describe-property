@@ -16,7 +16,12 @@ function Person(firstName, surname) {
 }
 
 Object.defineProperties(Person.prototype, {
-  
+
+  // Methods can be passed directly.
+  sayHi: d(function () {
+    console.log('Hello, my name is', this.fullName);
+  }),
+
   // Getters are defined using d.gs.
   fullName: d.gs(function () {
     return this.firstName + ' ' + this.surname;
@@ -27,11 +32,6 @@ Object.defineProperties(Person.prototype, {
     return this._firstName;
   }, function (value) {
     this._firstName = value.trim();
-  }),
-
-  // Methods can be passed directly.
-  sayHi: d(function () {
-    console.log('Hello, my name is', this.fullName);
   })
 
 });
@@ -56,7 +56,7 @@ To run the tests in node:
 
 ### Credits
 
-This library was inspired by @medikoo's excellent [d](https://github.com/medikoo/d) library. It is intended to be a lighter-weight alternative with fewer features, but also only a single dependency.
+This library was inspired by [@medikoo](https://github.com/medikoo)'s excellent [d](https://github.com/medikoo/d) library. It is intended to be a lighter-weight alternative with fewer features, but also only a single dependency.
 
 ### License
 
