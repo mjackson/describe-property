@@ -37,6 +37,27 @@ Object.defineProperties(Person.prototype, {
 });
 ```
 
+By default property descriptors use ES5 attributes.
+
+```js
+{
+  configurable: true,
+  enumerable: false,
+  writable: true
+}
+```
+
+But any of these can be overridden using an object literal.
+
+```js
+d({
+  enumerable: true,
+  value: function () {
+    // ...
+  }
+}); // => { configurable: true, enumerable: true, writable: true, value: function () {} }
+```
+
 ### Installation
 
 Using [npm](https://www.npmjs.org/):
