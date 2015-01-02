@@ -1,6 +1,6 @@
 {
   "name": "describe-property",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Define JavaScript object properties quickly with ES5 defaults",
   "main": "modules/describeProperty.js",
   "scripts": {
