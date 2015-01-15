@@ -1,8 +1,8 @@
 var expect = require('expect');
-var d = require('../describeProperty');
+var d = require('../index');
 
 describe('describeProperty', function () {
-  
+
   describe('when using a plain function', function () {
     var descriptor, fn;
     beforeEach(function () {

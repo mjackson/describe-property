@@ -1,5 +1,5 @@
 var expect = require('expect');
-var d = require('../describeProperty');
+var d = require('../index');
 
 describe('describeProperty.gs', function () {
   var descriptor, getter, setter;
